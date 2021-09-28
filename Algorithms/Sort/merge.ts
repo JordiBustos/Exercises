@@ -37,10 +37,24 @@ function sort(aux: number[] | string[], high: number, low: number, a: number[] |
     merge(aux, a, mid, low, high);
 }
 
-
 var arr: number[] = []
 for (let i = 0; i < 10**6; i++){
     arr[i] = Math.floor(Math.random()* 10**5)
 }
 
-sort(arr, arr.length-1, 0, arr)
+//sort(arr, arr.length-1, 0, arr)
+
+buMerge(arr)
+console.log(arr)
+
+/*Bottom Up merge sort implementation*/
+function buMerge(a: number[] | string[]){
+    let N: number = a.length;
+    let aux: number[] | string[] = [N];
+
+    for (let sz = 1; sz < N; sz = sz*2){
+        for(let low=0; low < N-sz; low+= sz*2){
+            merge(aux, a, low+sz, low, Math.min(low+sz*2-1, N-1))
+        }
+    }
+}
