@@ -19,6 +19,9 @@ def partition3(a, l, r):
 def randomized_quick_sort(a, l, r):
     if l >= r:
         return
+    #Faster for ~10 items arrays ~ 20% faster
+    #if (l + CUTOFF - 1 > r): return insertionSort(a, l, r) 
+    
     k = random.randint(l, r)
     a[l], a[k] = a[k], a[l]
     m1, m2 = partition3(a, l, r)
