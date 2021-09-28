@@ -1,0 +1,54 @@
+@media only screen and (max-width:479px){
+    #second-caja{
+        width:40vh !important;
+    }
+
+    #first-caja{
+        margin-left:15px !important;
+        width:40vh !important;
+    }
+
+    .fa-linkedin,
+    .fa-envelope,
+    .fa-instagram{
+        animation: bouncing !important; 
+        position:relative;   
+    }
+    #me{
+        width:90%;
+        height:100%;
+    }
+    .about-title{
+        margin-left:0;
+    }
+
+    #logo{
+        left:3rem;
+        position:relative;
+        display:none;
+    }
+    
+    #funny-thing-button{padding:0; font-size:1.3rem;}
+    #c25,#c26,#c27, #c27,#c28,#c29,#c30{
+        display:none;
+    } 
+
+    .img-link{
+        height:40vh;
+        border-radius:10px;
+    }
+
+    #second-caja{
+        margin-left:0;
+        margin-top:0;
+        width:190px;
+        height:130px;
+    }
+
+    #first-caja{
+        margin-left:0;
+        margin-top:0;
+        width:190px;
+        height:130px;
+    }
+}

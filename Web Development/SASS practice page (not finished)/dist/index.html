@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+        <nav class="nav">
+            <ul class="menu-nav">
+              <li class="menu-nav__item active">
+                <a href="index.html" class="menu-nav__link">
+                  Home
+                </a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="about.html" class="menu-nav__link">
+                  About Me
+                </a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="projects.html" class="menu-nav__link">
+                  My Projects
+                </a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="contact.html" class="menu-nav__link">
+                  Contact Me
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+    <main>
+      <video id="video" src="img/piano.mp4" loop autoplay muted></video>    
+        <section class="home">
+          <button type="button" onclick="desmute()" id="btn">Piano Sound :)</button>
+          <div class="social-icons">
+              <a href="#">
+                  <i class="fab fa-linkedin fa-x2"></i>
+              </a>
+              <a href="#">
+                  <i class="fab fa-instagram fa-x2"></i>
+              </a>
+              <a href="#">
+                  <i class="fab fa-facebook fa-x2"></i>
+              </a>
+              <a href="#">
+                  <i class="fab fa-github fa-x2"></i>
+              </a>
+            </div>
+
+            <footer>
+                &copy; Copyright 2021 This is possible thanks to GitHub Student Developer Pack
+            </footer>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/0b65e59550.js" crossorigin="anonymous"></script>
+</body>
+</html>

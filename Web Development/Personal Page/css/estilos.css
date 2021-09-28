@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* ESTILOS GENERALES */
+html{scroll-behavior: smooth;}
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	overflow-x: hidden;
+	color:Black;
+    z-index:2;
+}
+
+h1 {
+	color:black;
+	font-size: 8rem !important;	
+    font-family: 'Dancing Script', cursive !important;
+}
+
+#logo{
+    width:15%;
+    position:fixed;
+    left:110rem;
+}
+
+.about-title{
+    color:white;
+}
+
+
+p {
+	color: black;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 99%;
+}
+
+.text-container {
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size:2rem;	
+}
+
+.tm-content {
+    z-index: 1001;
+    margin-left:40px;
+}
+
+.quote{
+    margin-left:30rem;
+    margin-top:0.8rem;
+}
+
+/***SECTION***/
+
+#about-section{
+    background-color:white;
+    -webkit-transition: 0.6s ease;
+    transition:0.6s ease;
+    margin-top:10rem;
+}
+
+.about-title{
+    margin-left:100rem;
+}
+
+#me{
+    display: block;
+    width:37vw;
+    height:80vh;
+    margin:auto;
+    border-radius:5%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+/********Links Section**************/
+
+.two-images{
+    position:relative;
+}
+
+.bg-image{
+    background-size:cover;
+    position:absolute;
+    margin-left:-9.3rem;
+    width:100%;
+    height:100vh;
+    filter: brightness(0.3);
+}
+
+.links-box-2{top:2rem; position:relative; border-radius:10px;}
+
+.two-images a{
+    text-decoration:none;
+    color:#bc13fe;
+}
+
+.link-box{padding:2rem;}
+
+.two-images p {
+    color:black;
+    font-size:2rem;
+}
+
+.img-link{
+    width:100%;
+    height:65vh;
+    border-radius:10px;
+}
+
+
+/*************Icons*****************/
+
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color:black;
+}
+
+.fa-linkedin,
+.fa-envelope,
+.fa-instagram{
+    font-size:2.5rem;
+    margin-top:1rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-animation-name: bounce;
+            animation-name: bounce;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    position:fixed;
+}
+
+.fa-envelope:hover{
+    color:#BB001B;
+}
+
+.fa-instagram:hover{
+    color:#E1306C;
+}
+
+.fa-linkedin:hover{
+    color:#2867B2;
+}
+
+.fa-envelope:active{
+    color:#63202a;
+}
+
+.fa-instagram:active{
+    color:#a01442;
+}
+
+.fa-linkedin:active{
+    color:#13437e;
+}
+
+.fa-envelope:active,
+.fa-instagram:active,
+.fa-linkedin:active{
+    -webkit-transform:translateY(-1px) translateX(2px);
+    transform:translateY(-1px) translateX(2px);
+    box-shadow: 0 .2rem rgba(0, 0, 0, .2);
+}
+
+
+.social-icons-container {
+    margin: 10px;
+    -webkit-animation-name: icon;
+            animation-name: icon;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
+
+/**********footer*********/
+footer {
+	font-size: 1.5rem ;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align:center;
+    width:100%;
+	margin-top:10rem;
+}

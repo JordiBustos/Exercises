@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/media-query.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title></title>
+</head>
+<body>   
+<button id="btn" type="button" onclick="bottom()"><p><i class="arrow down"></i></p></button>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://www.gba.gob.ar/"><img class="brand-logo" src="img/logo_gba_footer_blanco.svg"></a>
+      </div>
+  
+      <!-- Collect the nav links for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapsed">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="list"><a href="https://www.gba.gob.ar/areasdegobierno" title="Botón de áreas de Gobierno">Áreas de Gobierno</a></li>
+            <li class="list"><a href="https://www.gba.gob.ar/servicios" title="Botón de Servicios">Servicios</a></li>
+            <li class="list"><a href="https://www.gba.gob.ar/historialdenoticias2021?type_1=All&amp;combine=" title="Noticias de GBA">Noticias</a></li>
+            <li class="list"><a href="https://www.gba.gob.ar/municipios" title="Botón de municipios">Municipios</a></li>
+            <li class="list-image"><a href="http://radioprovincia.gba.gob.ar/" title="Radio Provincia"></a><img id="radioprovincia" src="https://www.gba.gob.ar/static/radioprovincia/images/logo_radioprov_21.png"></li>
+            <li class="list-image"><a href="https://www.gba.gob.ar/noticias/bicentenario_provincia_de_buenos_aires" title="Bicentenario"><img id="bicentenario" src="img/logo_bicentenario.png"></a></li>
+        </ul>
+          </div><!-- navbar-collapse -->
+        </div><!-- container-fluid -->
+      </nav>
+      
+      <!--END OF NAVBAR SECTION-->
+
+      <!--HEADER-->
+
+<header>
+    <div id="content">
+        <iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" src="https://www.youtube.com/embed/vkhU7ZoOJiw?autoplay=1&amp;playsinline=1&amp;playlist=vkhU7ZoOJiw&amp;loop=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgba.gob.ar&amp;widgetid=1"></iframe>
+    </div>
+</header>
+<!--TEXT and BUTTONS SECTION-->
+<section class="text-buttons">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 .col-sm-4 col-md-8">
+                <div class="texto-1">
+                    <p id="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div id="buttons-section">
+                    <ul>
+                        <li><button class="botonJS" type="button" onclick="changeVideo()" >Hidden/Shown Youtube Video</button></li>
+                        <li><button class="botonJS" type="button" onclick="changeText()">Change left text</button></li>
+                        <li><button class="botonJS" id="change" type="button">Change this background</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--END OF TEXT BUTTONS SECTION-->
+    <!--Three images section-->
+<section three-images>
+    <h2>Images</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-4">
+                <div class="news-box">   
+                    <div class="news-box-title">
+                        <h3>Lorem Ipsum</h3>
+                    </div>
+                    <img width="100%" src="img/img1.jpeg">
+                    <p class="fecha">Viernes 13 de Agosto 2021</p>
+                    <p>In hac habitasse platea dictumst. Morbi ex velit, tincidunt sed augue quis, feugiat rutrum ex.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <div class="news-box">
+                    <div class="news-box-title">
+                        <h3>Lorem Ipsum</h3>
+                    </div>
+                    <img width="100%" src="img/img2.jpg">
+                    <p class="fecha">Jueves 12 de Agosto 2021</p>
+                    <p>Aliquam pretium mauris vel sollicitudin feugiat.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-4">
+                <div class="news-box">
+                    <div class="news-box-title">
+                        <h3>Lorem Ipsum</h3>
+                    </div>
+                    <img width="100%" src="img/img3.jpeg">
+                    <p class="fecha">Miércoles 11 de Agosto 2021</p>
+                    <p>Donec ac enim sed ante feugiat congue. In hac habitasse platea dictumst.</p>
+                </div>
+                </div>    
+            </div> <!--Row--> 
+    </div> <!--Container-->
+</section>
+
+    <!--END OF three images section-->
+
+    <!--FINAL TEXT-->
+<section id="final-text">
+    <h2>Text</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12"><p class="final__text-box">Proin gravida magna lacus, ut rutrum nisi pellentesque eu. Pellentesque egestas, lorem sed viverra congue, nulla enim accumsan turpis, eget porttitor magna urna vitae purus. Nam ac metus id nisl auctor vehicula. Suspendisse gravida eleifend diam dignissim cursus. Nam ut dignissim nisi. Quisque non felis arcu. Curabitur mollis metus vel vehicula tincidunt.</p></div>
+            <div class="col-md-6 col-xs-12"><p class="final__text-box">Aenean dolor risus, commodo varius blandit tempus, suscipit eget urna. Sed sit amet ligula lectus. Mauris eget odio non neque viverra dignissim vitae non nisl.</p></div>
+        </div>
+    </div>
+</section>
+<!--END OF FINAL TEXT--> 
+
+<!--BUTTONS JS-->
+<button id="btnBottom" type="button" onclick="topFunction()"></button>
+
+<!--JS-->
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+<script src="resources/js/index.js"></script>
+</body>
+
+</html>

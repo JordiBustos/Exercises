@@ -1,0 +1,30 @@
+.home {
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    color:$secondary-color;
+    &__name {
+      font-size: 5rem;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid set-text-color($primary-color);
+  
+      &--last {
+        color: $secondary-color;
+        font-weight: 700;
+      }
+    }
+  }
+
+  video{
+    position:absolute;
+    z-index: -1;
+    height:100vh;
+    width:100vw;
+  }
+
+  #btn{
+
+  }
