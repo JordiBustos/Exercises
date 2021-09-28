@@ -1,53 +1,46 @@
 //Merge sort algorithm :D
 
-function merge(a: number[] | string[], mid: number, low: number, high: number){
-    let n: number = mid - low + 1;
-    let n2: number = high - mid;
-
-    let L: number[] | string[] = [];
-    let R: number[] | string[] = [];
-    
-    //Copy left half of the array
-    for (let i = 0; i < n; i++) L[i] = a[low + i];
-    //Copy right half of the array 
-    for (let j = 0; j < n2; j++) R[j] = a[mid + 1 + j];
-
-    let i: number = 0, j: number = 0, k: number = low;
-
-    while (i < n && j < n2){
-        if (L[i] <= R[j]){ a[k] = L[i]; i++ }
-        else if (R[j] <= L[i]) { a[k] = R[j]; j++ }
-        k++
+function insertionSort(arr: number[] | string[]){
+    for (let i = 1; i < arr.length; ++i) {
+        let actual: number | string = arr[i]
+        let j: number = i - 1
+        while (j > -1 && arr[j] > actual){
+            arr[j+1] = arr[j]
+            j = j - 1 
+        }
+        arr[j+1] = actual
     }
-    
-    //Just to check
-    while (i < n) {
-        a[k] = L[i];
-        i++;
-        k++;
-    }
-    
-    while (j < n2) {
-        a[k] = R[j];
-        j++;
-        k++;
-    }
-}
-
-function sort(high: number, low: number, a: number[] | string[]){
-    if (low >= high) return
-
-    let mid = Math.floor(low + (high - low)/2);
-    
-    sort(mid,low, a);
-    sort(high, mid+1, a);
-
-    merge(a, mid, low, high);
+    return arr
 }
 
 
-var arr: number[] = [10, 20, 500000, 1, 2, 3, 209, 2, 100, 252, 3904293402, 2, 1, 1, 1, 3, 5, 5, 9]
+function merge(aux: number[] | string[], a: number[] | string[], mid: number, low: number, high: number): void{
+    let i: number = low, j = mid+1;
+    for (let k = low;k <= high; k++){
+        if (i > mid) aux[k] = a[j++];
+        else if (j > high) aux[k] = a[i++]
+        else if (a[j] < a[i]) aux[k] = a[j++]
+        else aux[k] = a[i++]
+    }
+}
 
-sort(arr.length-1, 0, arr)
+function sort(aux: number[] | string[], high: number, low: number, a: number[] | string[]){
+    let CUTOFF: number = 7;
 
-console.log(arr)
+    if (high <= (low + CUTOFF - 1)) return insertionSort(a);
+    let mid: number = Math.floor(low + (high -   low)/2);
+    
+    sort(a, mid,low, aux);
+    sort(a, high, mid+1, aux);
+
+    if (a[mid+1] > a[mid]) return
+    merge(aux, a, mid, low, high);
+}
+
+
+var arr: number[] = []
+for (let i = 0; i < 10**6; i++){
+    arr[i] = Math.floor(Math.random()* 10**5)
+}
+
+sort(arr, arr.length-1, 0, arr)
