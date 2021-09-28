@@ -11,5 +11,5 @@ pair of two (different) points.
 
 Input Format. The first line contains the number 𝑛 of points. Each of the following 𝑛 lines defines a point
 (𝑥_𝑖 , 𝑦_𝑖).
-Constraints. 0 ≤ 𝑛 ≤ 10 5 ; −10 9 ≤ 𝑥 𝑖 , 𝑦 𝑖 ≤ 10 9 are integers.
+Constraints. 0 ≤ 𝑛 ≤ 10^5 ; −10^9 ≤ 𝑥 𝑖 , 𝑦 𝑖 ≤ 10^9 are integers.
 Output Format. Output the minimum distance.
