@@ -21,7 +21,7 @@ if (argv.print) {
     console.log(`
       Title: ${post.data.title}\n
       Link: ${post.data.url}\n
-      Likes: ${post.data.ups}
+      Upvotes: ${post.data.ups}
     `)
     //shown post image in terminal
     if (post.data.thumbnail !== 'self' && post.data.thumbnail !== 'image' && post.data.thumbnail !== 'default'){
